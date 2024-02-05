@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </HEAD>
+    <body>
+        <div class="calculator">
+            <input type="text" id="input">
+            <div class="buttons">
+              <div class="operators">
+                <div onclick="buttonclick('+')">+</div>
+                <div onclick="buttonclick('-')">-</div>
+                <div onclick="buttonclick('*')">&times;</div>
+                <div onclick="buttonclick('/')">&divide;</div>
+              </div>
+              <div class="leftPanel">
+                <div class="numbers">
+                  <div onclick="buttonclick('7')">7</div>
+                  <div onclick="buttonclick('8')">8</div>
+                  <div onclick="buttonclick('9')">9</div>
+                </div>
+                <div class="numbers">
+                    <div onclick="buttonclick('4')">4</div>
+                    <div onclick="buttonclick('5')">5</div>
+                    <div onclick="buttonclick('6')">6</div>
+                </div>
+                <div class="numbers">
+                    <div onclick="buttonclick('1')">1</div>
+                    <div onclick="buttonclick('2')">2</div>
+                    <div onclick="buttonclick('3')">3</div>
+                </div>
+                <div class="numbers">
+                  <div onclick="buttonclick('0')">0</div>
+                  <div onclick="buttonclick('.')">.</div>
+                  <div onclick="buttonclear()">C</div>
+                </div>
+              </div>
+              <div class="equal" onclick="buttonanswer()">=</div>
+            </div>
+          </div>
+        <script src="script.js">
+        </script>
+        
+    </body>
+</HTML>
